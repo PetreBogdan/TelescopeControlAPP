@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">TelescopeControl</string>
+
+    <string name="Introducere">
+        Aceasta este aplicația cu ajutorul căreia putem controla sistemul de control al telescopului. A fost creată folosind Android Studio, în limbajul de programare JAVA. Aplicția este la rădăcină o aplicație de comunicare cu modulul HC-05 al plăcii de dezvoltare Arduino NANO.\n
+\n
+Aplicația prezintă 5 butoane și un switch pentru comenzile de bază:\n
+\n
+Pentru a trezi motorul DEC din modul sleep, se poate apăsa switch-ul „Sleep” sau se poate scrie și trimite în linia de comandă -sleep(pentru a trezi motorul) sau +sleep(pentru a intra înapoi în modul sleep).\n
+\n
+Range-ul maxim se poate mări sau micșora folosind butoanele de RANGE+ sau RANGE-, sau în linia de comandă, cu comanda +range, respectiv -range.\n
+\n
+Viteza motoarelor în modul de urmărire poate fi la fel modificată fie din butoane, fie din linia de comandă.\n
+\n
+Pentru comenzile de set sau GOTO se va scrie în felul următor:\n
+\n
+Comanda set: se va scrie un „s”, urmat de tipul de obiect (s-pentru stea, m pentru catalgoul Messier sau n pentru catalogul NGC) și numărul din catalog.\n
+De exemplu: s s223 sau s m101.\n\n
+Comanda GOTO: Este identică cu cea de set doar că se va pune la inceput „m”.\n
+De exemplu: g s223 sau g m101.\n\n
+Spațiile dintre cuvinte nu se vor lua în considerare. De asemenea caracterele se pot scrie și ele cu literă mare.\n
+\n
+Numele sau numărul obiectelor din catalogul de stele sau din Messier se pot găsi în anexa lucrării de licență.\n
+\n
+Această descriere se poate deschide și din interfața principală.
+    </string>
+
+
+</resources>

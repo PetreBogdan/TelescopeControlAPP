@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/txtinput"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/cometa">
+
+
+    <ToggleButton
+        android:id="@+id/btonoff"
+        android:layout_width="95dp"
+        android:layout_height="50dp"
+        android:text="ToggleButton"
+        android:textColor="#0A2483"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.019"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.069" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BLUETOOTH"
+        android:textColor="#0427EA"
+        android:textColorHighlight="#000000"
+        android:textColorHint="#050505"
+        android:textColorLink="#000000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/comand"
+        android:layout_width="296dp"
+        android:layout_height="40dp"
+        android:background="@color/gray"
+        android:hint="Input"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.927" />
+
+    <Button
+        android:id="@+id/send"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:text="SEND"
+        android:background="@color/white"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.984"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.927" />
+
+    <Button
+        android:id="@+id/rangeplus"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="196dp"
+        android:text="RANGE +"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/rangemin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.852" />
+
+    <Button
+        android:id="@+id/speedplus"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="196dp"
+        android:text="SPEED +"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/speedmin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.852" />
+
+    <ToggleButton
+        android:id="@+id/sleep"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="SLEEP"
+        android:textOff="SLEEP OFF"
+        android:textOn="SLEEP ON"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.948"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.528" />
+
+    <Button
+        android:id="@+id/rangemin"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="RANGE -"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.528" />
+
+    <Button
+        android:id="@+id/speedmin"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="SPEED -"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.528" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="STATUS"
+        android:textColor="@color/purple_500"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.347"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <Button
+        android:id="@+id/intromsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="intro"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.984"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+
+    <Button
+        android:id="@+id/inf"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="188dp"
+        android:text="INFO"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/sleep"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.948"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.861" />
+
+    <Button
+        android:id="@+id/listdevices"
+        android:layout_width="135dp"
+        android:layout_height="47dp"
+        android:text="List devices"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.423"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.073" />
+
+    <ListView
+        android:id="@+id/paired_devices_list"
+        android:layout_width="387dp"
+        android:layout_height="159dp"
+        android:background="#012851"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.209" />
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="391dp"
+        android:layout_height="174dp"
+        android:background="@color/gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.788">
+
+        <TextView
+            android:id="@+id/msg"
+            android:layout_width="411dp"
+            android:layout_height="125dp"
+            android:text=""
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/comand"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.951" />
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
